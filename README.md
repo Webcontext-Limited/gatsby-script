@@ -79,3 +79,15 @@ RESULT:
 - **Time to Interactive:** +3.8s
 - **Total Blocking Time:** +460ms
 - **Transfer Size:** +256.1
+
+## Testing tips received from Ferran 
+
+# 1. html.js (asyn/defer = true)
+*Removed User.com, Nimbata and Trustpilot scripts. GUA/ADS tracking scripts present.*
+
+- **Lighthouse Perfomance:** 99
+- **Time to Interactive:** +3.2s ( +0.3 sec)
+- **Total Blocking Time:** 70 ms 
+- **Transfer Size:** 176kb
+
+### -> added Trustpilot via html.js 
