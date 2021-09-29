@@ -1,7 +1,9 @@
 const addScript = (url, innerHTML) => {
   const script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = url;
+  if (url) {
+    script.src = url;
+  }
   script.innerHTML = innerHTML;
   document.body.appendChild(script);
 };
@@ -11,7 +13,7 @@ exports.onInitialClientRender = () => {
   addScript('//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js');
   addScript('https://mms.user.com/widget.js');
   addScript(
-    '',
+    null,
     `
   window.civchat = {
     apiKey: "PJCwx7",
