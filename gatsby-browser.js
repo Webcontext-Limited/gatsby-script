@@ -1,4 +1,4 @@
-const addScript = url => {
+/*const addScript = url => {
   const script = document.createElement("script")
   script.src = url
   script.async = true
@@ -12,3 +12,4 @@ exports.onInitialClientRender = () => {
     addScript("https://yourscript2/path.com")
   }
 }
+*/
