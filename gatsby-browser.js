@@ -8,9 +8,15 @@ const addScript = (url, innerHTML) => {
   document.body.appendChild(script);
 };
 
+const addContent = (content) => {
+  const test = document.createElement('div');
+  document.body.appendChild(test).innerHTML = 'hey';
+  document.getElementById('trustbox').appendChild(test).innerHTML = content;
+};
+
 exports.onInitialClientRender = () => {
-  addScript('//cdn.dni.nimbata.com/288803921.min.js');
   addScript('//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js');
+  addScript('//cdn.dni.nimbata.com/288803921.min.js');
   addScript('https://mms.user.com/widget.js');
   addScript(
     null,
@@ -20,9 +26,38 @@ exports.onInitialClientRender = () => {
   };`
   );
 
+  addContent(`<div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="5200f51800006400057311fa" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en">
+  <a href="https://uk.trustpilot.com/review/marymonson.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+</div>`);
+
   console.log('this is window.onload func');
 
   console.log('This is loaded by onInitialClientRender');
 };
 
 // window.onLoad=() =>
+/*
+<section>
+      <div
+        ref={ref}
+        data-locale='en-GB'
+        data-template-id='53aa8912dec7e10d38f59f36'
+        data-businessunit-id='5200f51800006400057311fa'
+        data-no-reviews='show'
+        data-style-height='140px'
+        data-style-width='100%'
+        data-theme='dark'
+        data-stars='5'
+        data-review-languages='en'
+        data-font-family='PT Sans'
+        data-text-color='black'
+      >
+        <a
+          href='https://uk.trustpilot.com/review/marymonson.co.uk'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Trustpilot
+        </a>
+      </div>
+    </section>*/
