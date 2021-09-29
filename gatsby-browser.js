@@ -11,7 +11,7 @@ exports.onInitialClientRender = () => {
   addScript('//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js');
   addScript('https://mms.user.com/widget.js');
   addScript(
-    null,
+    '',
     `
   window.civchat = {
     apiKey: "PJCwx7",
