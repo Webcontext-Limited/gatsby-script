@@ -97,6 +97,8 @@ COMPARED TO:
 
 _Async/defer = true_
 
+RESULT:
+
 - **Lighthouse Perfomance:** 95 (-4)
 - **Time to Interactive:** +3.7s ( +0.3 sec) --> same as when added via SSR
 - **Total Blocking Time:** 320 ms (+250ms) --> +100kb bigger than via SSR
@@ -106,16 +108,33 @@ _Async/defer = true_
 
 _Async/defer = true_
 
+RESULT:
+
 - **Lighthouse Perfomance:** 89 (-6)
 - **Time to Interactive:** +4.6s ( +0.9 sec) --> 0.9 sec better than via SSR
 - **Total Blocking Time:** 460 ms (+140ms) --> 70ms better than via SSR
-- **Transfer Size:** 240kb (+72kb) --> same as when added via SSR
+- **Transfer Size:** 312kb (+72kb) --> same as when added via SSR
 
 ### -> added Nimbata call tracking via html.js
 
 _Async/defer = true_
 
-- **Lighthouse Perfomance:** 89 (-6)
-- **Time to Interactive:** +4.6s ( +0.9 sec) --> 0.9 sec better than via SSR
-- **Total Blocking Time:** 460 ms (+140ms) --> 70ms better than via SSR
-- **Transfer Size:** 240kb (+72kb) --> same as when added via SSR
+RESULT:
+
+- **Lighthouse Perfomance:** 89
+- **Time to Interactive:** +4.6s 0.2 sec better compared to SSR
+- **Total Blocking Time:** 470 ms (+10ms) --> 40ms better than via SSR
+- **Transfer Size:** 240kb (+7kb) --> 1kb more compared when added via SSR
+
+### -> Removed cache & triggered new build
+
+- **Lighthouse Perfomance:** 90 (+2 better than via SSR)
+- **Time to Interactive:** +4.7s (0.1 sec worse than SSR)
+- **Total Blocking Time:** 430 ms --> (50ms better than via SSR)
+- **Transfer Size:** 321kb (+2kb) --> (2kb worse than via SSR)
+
+**CONCLUSION:** no noticable wins here. Perfomance score and blocking time are a bit better but they fluctuate a bit anyway.
+
+# 2. Scripts via onInitialClientRender() method
+
+_Removed User.com, Nimbata and Trustpilot scripts. GUA/ADS tracking scripts present._
