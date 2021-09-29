@@ -16,6 +16,7 @@ const addContent = (content) => {
 
 exports.onInitialClientRender = () => {
   addScript('//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js');
+  /*
   addScript('//cdn.dni.nimbata.com/288803921.min.js');
   addScript('https://mms.user.com/widget.js');
   addScript(
@@ -25,6 +26,7 @@ exports.onInitialClientRender = () => {
     apiKey: "PJCwx7",
   };`
   );
+  */
 
   addContent(`<div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="5200f51800006400057311fa" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en">
   <a href="https://uk.trustpilot.com/review/marymonson.co.uk" target="_blank" rel="noopener">Trustpilot</a>
