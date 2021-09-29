@@ -1,6 +1,9 @@
 import * as React from 'react';
 import loadable from '@loadable/component';
-const TrustBox = loadable(() => import('../components/Trustbox'));
+import pMinDelay from 'p-min-delay';
+const TrustBox = loadable(() =>
+  pMinDelay(import('../components/Trustbox'), 2000)
+);
 
 const IndexPage = () => (
   <section style={{ margin: '50px' }}>
