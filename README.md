@@ -106,7 +106,16 @@ _Async/defer = true_
 
 _Async/defer = true_
 
-- **Lighthouse Perfomance:** 95 (-4)
-- **Time to Interactive:** +3.7s ( +0.3 sec) --> same as when added via SSR
-- **Total Blocking Time:** 320 ms (+250ms) --> +100kb bigger than via SSR
-- **Transfer Size:** 240kb (+64kb) --> same as when added via SSR
+- **Lighthouse Perfomance:** 89 (-6)
+- **Time to Interactive:** +4.6s ( +0.9 sec) --> 0.9 sec better than via SSR
+- **Total Blocking Time:** 460 ms (+140ms) --> 70ms better than via SSR
+- **Transfer Size:** 240kb (+72kb) --> same as when added via SSR
+
+### -> added Nimbata call tracking via html.js
+
+_Async/defer = true_
+
+- **Lighthouse Perfomance:** 89 (-6)
+- **Time to Interactive:** +4.6s ( +0.9 sec) --> 0.9 sec better than via SSR
+- **Total Blocking Time:** 460 ms (+140ms) --> 70ms better than via SSR
+- **Transfer Size:** 240kb (+72kb) --> same as when added via SSR

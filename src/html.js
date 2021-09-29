@@ -47,7 +47,12 @@ export default function HTML(props) {
           type='text/javascript'
           src='https://mms.user.com/widget.js'
         />
-        ,
+        <script
+          async
+          defer
+          type='text/javascript'
+          src='//cdn.dni.nimbata.com/288803921.min.js'
+        />
       </body>
     </html>
   );
