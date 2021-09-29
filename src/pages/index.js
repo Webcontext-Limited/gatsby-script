@@ -2,7 +2,7 @@ import * as React from 'react';
 import loadable from '@loadable/component';
 import pMinDelay from 'p-min-delay';
 const TrustBox = loadable(() =>
-  pMinDelay(import('../components/Trustbox'), 5000)
+  pMinDelay(import('../components/Trustbox'), 10000)
 );
 
 const IndexPage = () => (
