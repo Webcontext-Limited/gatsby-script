@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { v4 } from 'uuid';
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
@@ -37,3 +37,4 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
     />,
   ]);
 };
+*/
