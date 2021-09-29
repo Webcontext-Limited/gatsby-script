@@ -1,5 +1,6 @@
 import * as React from 'react';
-import TrustBox from '../components/Trustbox';
+import loadable from '@loadable/component';
+const TrustBox = loadable(() => import('../components/Trustbox'));
 
 const IndexPage = () => (
   <section style={{ margin: '50px' }}>

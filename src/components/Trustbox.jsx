@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+
 const TrustBox = ({
   widget = `53aa8912dec7e10d38f59f36`,
   height = '140px',
