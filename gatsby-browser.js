@@ -22,17 +22,21 @@ exports.onInitialClientRender = () => {
       ),
     5000
   );
-  /*
-  addScript('//cdn.dni.nimbata.com/288803921.min.js');
-  addScript('https://mms.user.com/widget.js');
-  addScript(
-    null,
-    `
+
+  setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 5000);
+
+  setTimeout(() => addScript('https://mms.user.com/widget.js'), 5000);
+  setTimeout(
+    () =>
+      addScript(
+        null,
+        `
   window.civchat = {
     apiKey: "PJCwx7",
   };`
+      ),
+    5000
   );
-  */
 
   setTimeout(
     () =>
@@ -41,10 +45,6 @@ exports.onInitialClientRender = () => {
 </div>`),
     5000
   );
-
-  console.log('this is window.onload func');
-
-  console.log('This is loaded by onInitialClientRender');
 };
 
 // window.onLoad=() =>
