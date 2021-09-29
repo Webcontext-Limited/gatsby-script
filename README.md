@@ -80,14 +80,33 @@ RESULT:
 - **Total Blocking Time:** +460ms
 - **Transfer Size:** +256.1
 
-## Testing tips received from Ferran 
+## Testing tips received from Ferran
 
 # 1. html.js (asyn/defer = true)
-*Removed User.com, Nimbata and Trustpilot scripts. GUA/ADS tracking scripts present.*
+
+_Removed User.com, Nimbata and Trustpilot scripts. GUA/ADS tracking scripts present._
+
+COMPARED TO:
 
 - **Lighthouse Perfomance:** 99
-- **Time to Interactive:** +3.2s ( +0.3 sec)
-- **Total Blocking Time:** 70 ms 
+- **Time to Interactive:** +3.2s
+- **Total Blocking Time:** 70 ms
 - **Transfer Size:** 176kb
 
-### -> added Trustpilot via html.js 
+### -> added Trustpilot via html.js
+
+_Async/defer = true_
+
+- **Lighthouse Perfomance:** 95 (-4)
+- **Time to Interactive:** +3.7s ( +0.3 sec) --> same as when added via SSR
+- **Total Blocking Time:** 320 ms (+250ms) --> +100kb bigger than via SSR
+- **Transfer Size:** 240kb (+64kb) --> same as when added via SSR
+
+### -> added User.com chat via html.js
+
+_Async/defer = true_
+
+- **Lighthouse Perfomance:** 95 (-4)
+- **Time to Interactive:** +3.7s ( +0.3 sec) --> same as when added via SSR
+- **Total Blocking Time:** 320 ms (+250ms) --> +100kb bigger than via SSR
+- **Transfer Size:** 240kb (+64kb) --> same as when added via SSR

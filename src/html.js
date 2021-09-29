@@ -27,6 +27,27 @@ export default function HTML(props) {
           async
           defer
         />
+        <script
+          async
+          defer
+          data-cfasync={false}
+          type='text/javascript'
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.civchat = {
+              apiKey: "PJCwx7",
+            };`,
+          }}
+        />
+        ,
+        <script
+          async
+          defer
+          data-cfasync={false}
+          type='text/javascript'
+          src='https://mms.user.com/widget.js'
+        />
+        ,
       </body>
     </html>
   );
