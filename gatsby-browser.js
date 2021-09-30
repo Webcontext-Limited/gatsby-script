@@ -27,6 +27,18 @@ exports.onInitialClientRender = () => {
       '//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
     );
     addScript('//cdn.dni.nimbata.com/288803921.min.js');
+    setTimeout(() => addScript('https://mms.user.com/widget.js'), 2000);
+    setTimeout(
+      () =>
+        addScript(
+          null,
+          `
+    window.civchat = {
+      apiKey: "PJCwx7",
+    };`
+        ),
+      2000
+    );
   });
   /*setTimeout(
     () =>
