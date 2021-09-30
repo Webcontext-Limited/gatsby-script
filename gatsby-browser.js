@@ -14,6 +14,11 @@ const addContent = (content) => {
   document.getElementById('trustbox').appendChild(test).innerHTML = content;
 };
 
+const load = (script) =>
+  window.addEventListener('load', function () {
+    script;
+  });
+
 exports.onInitialClientRender = () => {
   //setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 2000);
   /*
@@ -21,25 +26,7 @@ exports.onInitialClientRender = () => {
     addScript('//cdn.dni.nimbata.com/288803921.min.js');
   };
   */
-
-  window.addEventListener('load', function () {
-    addScript(
-      '//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
-    );
-    addScript('//cdn.dni.nimbata.com/288803921.min.js');
-    setTimeout(() => addScript('https://mms.user.com/widget.js'), 2000);
-    setTimeout(
-      () =>
-        addScript(
-          null,
-          `
-    window.civchat = {
-      apiKey: "PJCwx7",
-    };`
-        ),
-      2000
-    );
-  });
+  load(addScript('//cdn.dni.nimbata.com/288803921.min.js'));
   /*setTimeout(
     () =>
       addScript(
