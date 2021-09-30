@@ -20,7 +20,9 @@ const onLoad = (script) =>
   });
 
 exports.onInitialClientRender = () => {
-  onLoad(addScript('//cdn.dni.nimbata.com/288803921.min.js'));
+  document.onscroll = function () {
+    addScript('//cdn.dni.nimbata.com/288803921.min.js');
+  };
 };
 
 //setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 2000);
