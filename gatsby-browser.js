@@ -15,6 +15,8 @@ const addContent = (content) => {
 };
 
 exports.onInitialClientRender = () => {
+  setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 5000);
+  /*
   setTimeout(
     () =>
       addScript(
@@ -23,7 +25,7 @@ exports.onInitialClientRender = () => {
     5000
   );
 
-  setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 5000);
+ 
 
   setTimeout(() => addScript('https://mms.user.com/widget.js'), 5000);
   setTimeout(
@@ -45,6 +47,7 @@ exports.onInitialClientRender = () => {
 </div>`),
     5000
   );
+  */
 };
 
 // window.onLoad=() =>
