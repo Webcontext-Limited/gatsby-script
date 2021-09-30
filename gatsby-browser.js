@@ -21,13 +21,13 @@ exports.onInitialClientRender = () => {
     addScript('//cdn.dni.nimbata.com/288803921.min.js');
   };
   */
-  window.addEventListener('load', function () {
+
+  document.addEventListener('load', function () {
     addScript(
       '//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
     );
     addScript('//cdn.dni.nimbata.com/288803921.min.js');
   });
-
   /*setTimeout(
     () =>
       addScript(
