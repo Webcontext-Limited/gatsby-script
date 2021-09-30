@@ -27,11 +27,13 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
       
     />,
     */
+    /*
     <script
       key={v4()}
       type={`text/javascript`}
       src={`//cdn.dni.nimbata.com/288803921.min.js`}
     />,
+    */
     /*
     <script
       key={v4()}
