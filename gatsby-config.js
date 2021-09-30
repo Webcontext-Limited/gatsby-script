@@ -13,6 +13,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager-timeout',
+      options: {
+        id: process.env.GOOGLE_TAG_MANAGER_ID,
+        timeout: 1500,
+      },
+    },
     'gatsby-plugin-loadable-components-ssr',
   ],
 };
