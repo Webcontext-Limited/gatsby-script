@@ -1,12 +1,14 @@
 import * as React from 'react';
+import TrustBox from '../components/Trustbox';
 //import loadable from '@loadable/component';
 //import pMinDelay from 'p-min-delay';
 /*const TrustBox = loadable(() =>
   pMinDelay(import('../components/Trustbox'), 10000)
 );*/
-
+import TrustBox2 from '../components/Trustbox2';
 const IndexPage = () => (
   <>
+    <TrustBox />
     <section style={{ margin: '50px' }}>
       <h1 style={{ marginBottom: '20px' }}>
         Testing third party script's perfomance
