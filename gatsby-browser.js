@@ -14,20 +14,20 @@ const addContent = (content) => {
   document.getElementById('trustbox').appendChild(test).innerHTML = content;
 };
 
-const load = (script) =>
+const onLoad = (script) =>
   window.addEventListener('load', function () {
     script;
   });
 
-exports.onInitialClientRender = () => {
-  //setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 2000);
-  /*
+exports.onInitialClientRender = () => {};
+
+//setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 2000);
+/*
   document.onscroll = function () {
     addScript('//cdn.dni.nimbata.com/288803921.min.js');
   };
   */
-  load(addScript('//cdn.dni.nimbata.com/288803921.min.js'));
-  /*setTimeout(
+/*setTimeout(
     () =>
       addScript(
         '//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
@@ -35,7 +35,7 @@ exports.onInitialClientRender = () => {
     5000
   );
 */
-  /*
+/*
 
   setTimeout(() => addScript('https://mms.user.com/widget.js'), 5000);
   setTimeout(
@@ -65,7 +65,6 @@ exports.onInitialClientRender = () => {
     5000
   );
   */
-};
 
 // window.onLoad=() =>
 /*
