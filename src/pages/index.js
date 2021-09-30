@@ -18,6 +18,7 @@ const IndexPage = () => (
       <p style={{ marginTop: `20px` }}>This is Trustbox:</p>
       <div id='trustbox'></div>
       {/*<TrustBox />*/}
+      <div style={{ marginBottom: '5000px' }} />
     </section>
   </>
 );
