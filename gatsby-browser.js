@@ -22,7 +22,7 @@ exports.onInitialClientRender = () => {
   };
   */
 
-  document.addEventListener('load', function () {
+  window.addEventListener('load', function () {
     addScript(
       '//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js'
     );
