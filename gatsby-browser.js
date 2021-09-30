@@ -15,7 +15,12 @@ const addContent = (content) => {
 };
 
 exports.onInitialClientRender = () => {
-  setTimeout(() => addScript('//cdn.dni.nimbata.com/288803921.min.js'), 5000);
+  //addScript('//cdn.dni.nimbata.com/288803921.min.js');
+
+  document.onscroll = function () {
+    addScript('//cdn.dni.nimbata.com/288803921.min.js');
+  };
+
   /*
   setTimeout(
     () =>
