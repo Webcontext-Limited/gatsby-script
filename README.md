@@ -135,6 +135,13 @@ RESULT:
 
 **CONCLUSION:** no noticable wins here. Perfomance score and blocking time are a bit better but they fluctuate a bit anyway.
 
-# 2. Scripts via onInitialClientRender() method
+# 2. Scripts via onInitialClientRender() + onScroll
+_User.com chat widget and Trustpilot are loaded via onInitialClientRender API after the visitor initiates scroll event_
+_Nimbata is loaded via onInitialClientRender_
 
-_Removed User.com, Nimbata and Trustpilot scripts. GUA/ADS tracking scripts present._
+### -> Removed cache & triggered new build
+
+- **Lighthouse Perfomance:** 90 (+2 better than via SSR)
+- **Time to Interactive:** +4.7s (0.1 sec worse than SSR)
+- **Total Blocking Time:** 430 ms --> (50ms better than via SSR)
+- **Transfer Size:** 321kb (+2kb) --> (2kb worse than via SSR)
